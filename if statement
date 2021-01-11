@@ -1,0 +1,171 @@
+age = 10
+if age < 4:
+	print("Your ticket is free!")
+elif age > 4 and age < 18:
+	print("Your ticket is $25!")
+else:
+	print("Your ticket is $40!") 
+
+age = 12
+if age < 4:
+	price = 0
+if age < 18:
+	price = 25
+if age > 18:
+	price = 40
+
+print(f"Your ticket is cost ${price}.")
+
+requeted_toppings = ["mushroom", "extra cheese"]
+
+if "mushroom" in requeted_toppings:
+	print("added mushroom")
+if "extra cheese" in requeted_toppings:
+	print("added extra cheese")
+if "pepperoni" in requeted_toppings:
+	print("added pepperoni")
+
+print("\n Finished making your pizza!")
+
+
+alien_colors = ["red", "green", "yellow"]
+if "green" in alien_colors:
+	print("You have earned 5 points!")
+if alien_colors != "green":
+	print("You have earned 10 points!")
+
+alien_colors = ["red", "green", "yellow"]
+if "green" in alien_colors:
+	print("You have earned 5 points!")
+elif alien_colors != "green":
+	print("You have earned 10 points!")
+
+alien_colors = ["red", "green", "yellow"]
+if "green" in alien_colors:
+	print("You have earned 5 points!")
+if "red" in alien_colors:
+	print("You have earned 10 points!")
+if "yellow" in alien_colors:
+	print("You have earned 15 points!")
+
+age = 14
+if age < 2:
+	print("This person is a crying baby!")
+elif age < 4:
+	print("The person is a toddler.")
+elif age < 13:
+	print("The person is a kid.")
+elif age < 20:
+	print("The person is a teenager.")
+elif age < 65:
+	print("The person is an adult.")
+elif age > 65:
+	print("The person is an elder.")
+
+
+
+requested_toppings = ['mushroom', 'extra cheese']
+
+if 'mushroom' in requested_toppings:
+	print('Add mushroom in your topping!')
+if 'banana' in requested_toppings:
+	print('Adding banana')
+if 'extra cheese' in requested_toppings:
+	print('Adding extra cheese')
+
+print('\nfinished your topping')
+
+
+usernames = []
+if 'admin' in usernames:
+	print('Hello Boss')
+else:
+	print('We need to find more users!')
+
+current_users = ['lily', 'wangbadan', 'shabi', 'goubi', 'zazhong']
+new_users = ['lilei', 'hanmeimei', 'shabi', 'goubi']
+
+current_users = current_users.copy()
+for new_user in new_users:
+	if new_user in current_users:
+		print("This user name is occupied!")
+	else:
+		print('You can use this username')
+
+
+numbers = list(range(1,10))
+print(numbers)
+
+alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'slow'}
+print(f"original position: {alien_0['x_position']}")
+
+if alien_0['speed'] == 'slow':
+	x_increment = 1
+elif alien_0['speed'] == 'medium':
+	x_increment = 2
+else:
+	x_increment = 3
+
+alien_0['x_position'] = alien_0['x_position'] + x_increment
+print(f"New position: {alien_0['x_position']}")
+
+favorite_songs = {
+	'Zhangwei':'qianfudeai',
+	'DW' : 'Tadejiemao',
+}
+
+song = favorite_songs['Zhangwei'].title()
+print(f"Zhangwei's favorite song is {song}.")
+
+personal_information = {
+	'first_name':'jinchao',
+	'last_name':'duan',
+	'gender':'male',
+	'city':'Urumqi',
+}
+
+print(f"His first name is {personal_information['first_name']}")
+print(f"His last name is {personal_information['last_name']}")
+print(f"He is {personal_information['gender']}")
+print(f"He lives in {personal_information['city']}")
+
+
+rivers = {
+	'nile': 'Egypt',
+	'huanghe': 'China',
+	'alabama': 'United States',
+}
+
+for key, value in rivers.items():
+	print(f'The {key.title()} runs through {value.title()}')
+
+for key in rivers.keys():
+	print(key.title())
+
+for value in rivers.values():
+	print(value)
+
+
+aliens = []
+
+for alien_number in range(30):
+	new_alien = {'color':'green', 'points':'5', 'speed':'slow'}
+	aliens.append(new_alien)
+
+for alien in aliens[:5]:
+	print(alien)
+
+favorite_languages = {
+	'jen':['python','ruby'],
+	'sarah':['c'],
+	'edward':['ruby','go'],
+	'phil':['python','haskell'],
+}
+
+for name, languages in favorite_languages.items():
+	if len(languages) > 1:
+		print(f"\n{name.title()}'s favorite languages are:")
+		for language in languages:
+			print(f'\t{language.title()}')
+	else:
+		print(f"\n{name.title()}'s favorite language is {language.title()}")

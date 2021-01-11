@@ -1,0 +1,209 @@
+bicycles = ['trek', 'cannabis', 'redline', 'specialized']
+message = f'my first bicycle was a {bicycles[0].title()}.'
+print (message)
+
+friends = ["lily", "ana", "michelle"]
+friends[0] = 'Michael' 
+message = f"My frend is {friends[0].title()}."
+
+print (message)
+
+names = []
+names.append('wudi')
+names.append('zhangwei')
+names.append('daqiao')
+names.append('guofangwang')
+names.insert(0, 'han han')
+print(names)
+names.remove('zhangwei')
+print(names)
+SB = 'han han'
+names.remove(SB)
+print(names)
+print(f'\n {SB.title()} is SB')
+
+
+guests = []
+guests.append('djc')
+guests.append('xt')
+guests.append('zzsn')
+message = f'I will invite {guests[0].title()} to dinner.'
+print(message) 
+message = f'I will invite {guests[1].title()} to dinner.'
+print(message) 
+message = f'I will invite {guests[2].title()} to dinner.'
+print(message) 
+guests_absense = guests.pop(-1)
+message = f'{guests_absense.title()} cant make it.'
+print(message)
+
+message = f'I will invite {guests[0].title()} to dinner.'
+print(message) 
+message = f'I will invite {guests[1].title()} to dinner.'
+print(message) 
+guests.insert(0, 'zoro')
+guests.insert(2, 'nami')
+guests.insert(-1,'guojingming')
+print(guests)
+
+print("sorry I can only invite two people.")
+print(guests)
+sorry = guests.pop()
+print(f'I am sorry to inform you {sorry.title()} I cant invite you for dinner')
+sorry = guests.pop()
+print(f'I am sorry to inform you {sorry.title()} I cant invite you for d.inner')
+sorry = guests.pop()
+print(f'I am sorry to inform you {sorry.title()} I cant invite you for d.inner')
+
+
+print (f'I will invite you for dinner, {guests[0].title()}!')
+print (f'I will invite you to dinner, {guests[1].title()}!')
+del guests[0]
+del guests[0]
+print(guests)
+
+weed = ['blueberry', 'skunk', 'AK47']
+print(weed)
+
+print("\nHere is the sorted list:")
+print(sorted(weed))
+
+print("\nHere is the original list:")
+print(weed)
+
+
+locations = ["Paris", "Tokyo", "Wuhan", "Tibet", "Amsterdam"]
+print(locations)
+
+print(sorted(locations))
+
+print(locations)
+
+locations.sort(reverse=True)
+print(locations)
+
+locations.reverse()
+print(locations)
+
+for location in locations:
+	print(location)
+
+
+pizzas = ["hawaii", "peporoni", "sausage"]
+for pizza in pizzas:
+	print(f"I like {pizza.title()} pizza!")
+print("I really like pizza!")
+
+animals = ["dog", "cat", "giraffe"]
+for animal in animals:
+	print(f"{animal} would make a great pet!")
+
+for value in range(1,5):
+	print(value)
+
+numbers = list(range(1,6))
+print(numbers)
+
+even_numbers = list(range(1,108,23))
+print(even_numbers)
+
+squares = []
+for value in range(1,11):
+	squares.append(value ** 2)
+print(squares)
+
+squares = [value ** 2 for value in range (1,5)]
+print(squares)
+
+squares = [value - 100 for value in range (44,46)]
+print(squares)
+
+
+
+
+
+million = list(range(1,1000001))
+print(min(million))
+print(max(million))
+print(sum(million))
+
+odd_numbers = list(range(1,20,2))
+for number in odd_numbers:
+	print(number)
+
+list = []
+for value in range(1,11):
+	list.append(value**3)
+print(list)
+
+list = ['wangbadan', 'choushabi', 'caonima', 'diaosi', 'chunhuo', 'shenjingbing']
+print(list[0:3])
+print(list[2:5])
+print(list[-3:])
+
+my_foods = ['pizza', 'falafel', 'carrot cake'] 
+friend_foods = my_foods[:]
+
+my_foods.append('ice cream')
+friend_foods.append('spicy chicken')
+
+for food in my_foods:
+	print(f'My favorite food is {food.title()}')
+
+for food in friend_foods:
+	print(f"My friend's favorite food is {food.title()}")
+
+menu = ("steak", "chicken wings", "burger", "spaghetti")
+for food in menu:
+	print(food)
+
+menu = ("noodles", "chicken wings", "burger", "spaghetti")
+for food in menu:
+	print(food)
+
+weeds = ['skunk', 'ak47', 'blueberry']
+for weed in weeds:
+	if weed == 'skunk':
+		print(weed.upper())
+	else:
+		print(weed)    
+
+requested_topping = 'mushrooms'
+
+if requested_topping != 'anchovies':
+ 	print("Hold the anchovies!")
+
+banned_users = ['rongli', 'DJC', 'WXF']
+user = 'wangbadan'
+
+if user not in banned_users:
+	print(f"{user.title()}, you can post whatever you like!")
+
+book = 'world war 2'
+print("Is book == 'world war 2'? I predict True.")
+print(book == 'world war 2')
+
+
+print("Is book == 'zoombieland'? I predict False.")
+print(book == 'zoombieland')
+
+
+name = 'Spacemonkey'
+
+if name == "spacemonkey":
+	print("User name is occupied!")
+else:
+	print("create your user name!")
+
+
+area = "Sydney"
+if area != "Asia":
+	print("you are in downunder!")
+
+age = 3
+if age < 4:
+	print("Your ticket is free!")
+elif age > 4 and age < 18:
+	print("Your ticket is $25!")
+else:
+	print("Your ticket is $40!")
